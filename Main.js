@@ -21,11 +21,10 @@ let PatientItem = styled.div`
     background-color: #fff;
     border: 1px solid #013852;
     min-height: 150px;
-    height: 300px;
+    height: 180px;
     width: 220px;
     margin: 30px 0 ;
     border-radius: 8px;
-    display: flex;
     padding: 8px ;
 `
 
@@ -35,31 +34,26 @@ let PatientImg = styled.img`
     object-fit: cover;
     margin: 10px;
     margin-left: 5px;
+    
 `
 
-     
-let PatientInfo = styled.div`
 
+let PatientInfo = styled.div`
+    Display:flex;
 `
 
 let PatientName = styled.p`
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 10%;
 `
 
 let PatientAge = styled.p`
-    font-size: 0.8rem;
-    margin-top: 5px;
+    font-size: 1rem;
 `
 
 let PatientDrugs = styled.p`
 
 `
-
-let Desc = styled.div`
-    
-`
-
 
 
 
@@ -73,13 +67,12 @@ class Main extends Component {
                         return (
                             <Container>
                                 <PatientItem>
-                                    <PatientImg />
                                     <PatientInfo>
+                                        <PatientImg />
                                         <PatientName>Mustafa Alfaisal</PatientName>
-                                        <PatientAge>23 Years old</PatientAge>
                                     </PatientInfo>
-                                    <Desc>
-                                    </Desc>
+                                    <PatientAge>23 Years old</PatientAge>
+                                    <PatientDrugs>cold and flo</PatientDrugs>
                                 </PatientItem>
                             </Container>
                         )
