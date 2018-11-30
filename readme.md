@@ -1,12 +1,12 @@
 # the Clinic
 
-Install dependence :
+Install dependences :
 
 ```
     npm install react react-dom styled-components
 ```
 
-to start the server type
+to start the app
 
 ```
  npm start
